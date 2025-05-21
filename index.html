@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Web Design & Digital Growth Specialist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold text-gradient">Your Name</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-indigo-600 transition">Services</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 transition">Portfolio</a>
+                    <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 transition">Testimonials</a>
+                    <a href="#blog" class="text-gray-600 hover:text-indigo-600 transition">Blog</a>
+                    <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition">FAQ</a>
+                    <a href="#contact" class="bg-gradient text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition">Get in Touch</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="pt-2 pb-4 space-y-1">
+                <a href="#services" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">Services</a>
+                <a href="#portfolio" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">Portfolio</a>
+                <a href="#about" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">About</a>
+                <a href="#testimonials" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">Testimonials</a>
+                <a href="#blog" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">Blog</a>
+                <a href="#faq" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">FAQ</a>
+                <a href="#contact" class="block pl-3 pr-4 py-2 text-base font-medium bg-gradient text-white rounded-md">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+                <div class="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left lg:flex lg:items-center lg:space-x-8">
+                        <div class="lg:w-1/2">
+                            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                                <span>I help businesses</span>
+                                <span class="text-gradient"> grow online</span>
+                            </h1>
+                            <p class="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                                Creating stunning websites & high-converting digital marketing strategies that deliver real business results.
+                            </p>
+                            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                <div class="rounded-md shadow">
+                                    <a href="#contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient hover:opacity-90 md:py-4 md:text-lg md:px-10">
+                                        Get a Free Consultation
+                                    </a>
+                                </div>
+                                <div class="mt-3 sm:mt-0 sm:ml-3">
+                                    <a href="#portfolio" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white border-indigo-100 border-2 hover:bg-indigo-50 md:py-4 md:text-lg md:px-10">
+                                        View My Work
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block lg:w-1/2 mt-10 lg:mt-0">
+                            <img src="/api/placeholder/600/400" alt="Web design and digital growth" class="rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Services I Offer
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Custom solutions to help your business establish a powerful online presence and drive growth.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white mb-4">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Website Design & Development</h3>
+                        <p class="mt-2 text-gray-600">
+                            Custom-designed, responsive websites that reflect your brand and convert visitors into customers.
+                        </p>
+                        <div class="mt-4 text-indigo-600 font-medium">Starting at $1,499</div>
+                        <a href="#contact" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white mb-4">
+                            <i class="fas fa-funnel-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Sales Funnels</h3>
+                        <p class="mt-2 text-gray-600">
+                            Strategic, multi-step sales funnels designed to nurture leads and maximize conversions.
+                        </p>
+                        <div class="mt-4 text-indigo-600 font-medium">Starting at $999</div>
+                        <a href="#contact" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white mb-4">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Paid Ad Campaigns</h3>
+                        <p class="mt-2 text-gray-600">
+                            Results-driven ad strategies for Meta, Google, and other platforms to reach your target audience.
+                        </p>
+                        <div class="mt-4 text-indigo-600 font-medium">Starting at $799/mo</div>
+                        <a href="#contact" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white mb-4">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Landing Pages</h3>
+                        <p class="mt-2 text-gray-600">
+                            High-converting landing pages designed to capture leads and drive specific actions.
+                        </p>
+                        <div class="mt-4 text-indigo-600 font-medium">Starting at $499</div>
+                        <a href="#contact" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white mb-4">
+                            <i class="fas fa-comments-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Consulting</h3>
+                        <p class="mt-2 text-gray-600">
+                            Expert advice and strategies to improve your existing digital marketing efforts.
+                        </p>
+                        <div class="mt-4 text-indigo-600 font-medium">$150/hr</div>
+                        <a href="#contact" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient text-white mb-4">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">E-commerce Solutions</h3>
+                        <p class="mt-2 text-gray-600">
+                            Custom online stores with seamless checkout experiences and marketing strategies.
+                        </p>
+                        <div class="mt-4 text-indigo-600 font-medium">Starting at $2,499</div>
+                        <a href="#contact" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Featured Work
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Results-driven projects that have helped businesses grow online.
+                </p>
+            </div>
+
+            <div class="mt-12 space-y-12">
+                <!-- Case Study 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <div class="lg:flex">
+                        <div class="lg:w-1/2">
+                            <img src="/api/placeholder/800/600" alt="Project 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 lg:w-1/2">
+                            <h3 class="text-2xl font-bold text-gray-900">Boutique Clothing Store Rebrand</h3>
+                            <p class="mt-2 text-sm text-indigo-600 font-medium">Website Design & E-commerce</p>
+                            <div class="mt-4 text-gray-600">
+                                <p class="mb-2"><strong>Challenge:</strong> Local clothing boutique with outdated website and poor online sales.</p>
+                                <p class="mb-2"><strong>Solution:</strong> Complete website redesign with integrated e-commerce platform and mobile optimization.</p>
+                                <p><strong>Results:</strong> 215% increase in online sales and 78% improvement in average session duration.</p>
+                            </div>
+                            <a href="#" class="mt-6 inline-block px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient hover:opacity-90">
+                                View Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <div class="lg:flex flex-row-reverse">
+                        <div class="lg:w-1/2">
+                            <img src="/api/placeholder/800/600" alt="Project 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 lg:w-1/2">
+                            <h3 class="text-2xl font-bold text-gray-900">Health & Wellness Coach</h3>
+                            <p class="mt-2 text-sm text-indigo-600 font-medium">Sales Funnel & Ad Campaign</p>
+                            <div class="mt-4 text-gray-600">
+                                <p class="mb-2"><strong>Challenge:</strong> Wellness coach struggling to convert website visitors to coaching clients.</p>
+                                <p class="mb-2"><strong>Solution:</strong> Created a multi-step sales funnel with lead magnet and Facebook ad campaign.</p>
+                                <p><strong>Results:</strong> 325 new leads in first month and 27 new coaching clients (12x ROI on ad spend).</p>
+                            </div>
+                            <a href="#" class="mt-6 inline-block px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient hover:opacity-90">
+                                View Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <div class="lg:flex">
+                        <div class="lg:w-1/2">
+                            <img src="/api/placeholder/800/600" alt="Project 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 lg:w-1/2">
+                            <h3 class="text-2xl font-bold text-gray-900">Local Restaurant Chain</h3>
+                            <p class="mt-2 text-sm text-indigo-600 font-medium">Website & Local SEO</p>
+                            <div class="mt-4 text-gray-600">
+                                <p class="mb-2"><strong>Challenge:</strong> Restaurant with 3 locations needed better online visibility and table reservations.</p>
+                                <p class="mb-2"><strong>Solution:</strong> Responsive website with reservation system and local SEO optimization.</p>
+                                <p><strong>Results:</strong> 45% increase in online reservations and first page rankings for key local search terms.</p>
+                            </div>
+                            <a href="#" class="mt-6 inline-block px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient hover:opacity-90">
+                                View Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:space-x-12">
+                <div class="lg:w-1/3">
+                    <img src="/api/placeholder/400/400" alt="Your Name" class="rounded-full shadow-lg mx-auto lg:mx-0">
+                </div>
+                <div class="mt-8 lg:mt-0 lg:w-2/3">
+                    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        About Me
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Hi, I'm [Your Name]! I'm a web designer and digital growth specialist with over [X] years of experience helping businesses establish their online presence and grow through strategic digital marketing.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-600">
+                        After working with [previous experience], I started this business to help small and medium-sized businesses leverage the power of the web without the enterprise-level price tag.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-600">
+                        My approach combines technical expertise in web design and development with a deep understanding of conversion optimization and digital marketing strategies. I believe in creating websites and digital campaigns that don't just look good but also deliver measurable results for your business.
+                    </p>
+                    <div class="mt-6 flex space-x-6">
+                        <a href="#" class="text-gray-600 hover:text-indigo-600">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-indigo-600">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-indigo-600">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-indigo-600">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What Clients Say
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Don't take my word for it - here's what clients have to say about working with me.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Working with [Your Name] was the best decision for our business. The website they created exceeded our expectations, and the sales funnel they designed has transformed our lead generation process."
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img src="/api/placeholder/50/50" alt="Client 1" class="h-10 w-10 rounded-full">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Sarah Johnson</p>
+                            <p class="text-sm text-gray-500">Wellness Coach, Thrive Health</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Our e-commerce sales increased by 200% in the first three months after launching our new website. [Your Name]'s design and marketing strategy were key to our success."
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img src="/api/placeholder/50/50" alt="Client 2" class="h-10 w-10 rounded-full">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Michael Brown</p>
+                            <p class="text-sm text-gray-500">Owner, Urban Threads Boutique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Professional, responsive, and incredibly knowledgeable. [Your Name] took the time to understand our business goals and delivered a website that perfectly represents our brand."
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img src="/api/placeholder/50/50" alt="Client 3" class="h-10 w-10 rounded-full">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Lisa Martinez</p>
+                            <p class="text-sm text-gray-500">Marketing Director, Fresh Bites Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Resources Section -->
+    <section id="blog" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Latest Insights
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Helpful resources and tips to help you grow your business online.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/800/400" alt="Blog Post 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm font-medium text-indigo-600">
+                            Web Design
+                        </p>
+                        <a href="#" class="block mt-2">
+                            <h3 class="text-xl font-semibold text-gray-900">How a Good Website Can Grow Your Small Business</h3>
+                        </a>
+                        <p class="mt-3 text-gray-600">
+                            Learn the key elements of a business website that converts visitors into customers and helps establish your brand online.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/800/400" alt="Blog Post 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm font-medium text-indigo-600">
+                            Digital Marketing
+                        </p>
+                        <a href="#" class="block mt-2">
+                            <h3 class="text-xl font-semibold text-gray-900">What is a Sales Funnel and Why It Works</h3>
+                        </a>
+                        <p class="mt-3 text-gray-600">
+                            Discover how a well-designed sales funnel can nurture leads and dramatically increase your conversion rates.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/800/400" alt="Blog Post 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm font-medium text-indigo-600">
+                            Paid Advertising
+                        </p>
+                        <a href="#" class="block mt-2">
+                            <h3 class="text-xl font-semibold text-gray-900">5 Facebook Ad Strategies That Actually Work in 2025</h3>
+                        </a>
+                        <p class="mt-3 text-gray-600">
+                            Cut through the noise with these proven Facebook advertising techniques that deliver high ROI for small businesses.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="#" class="inline-block px-6 py-3 border border-indigo-600 text-indigo-600 rounded-md font-medium hover:bg-indigo-50">
+                    View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Frequently Asked Questions
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Answers to common questions about my services and process.
+                </p>
+            </div>
+
+            <div class="mt-12 max-w-3xl mx-auto divide-y divide-gray-200">
+                <!-- FAQ Item 1 -->
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900">How long does a website project typically take?</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>Most standard website projects take 3-4 weeks from start to launch. This includes discovery, design, development, and revisions. Larger e-commerce sites or projects with complex functionality may take 6-8 weeks. I'll provide a specific timeline during our initial consultation based on your project scope.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900">What's your pricing model?</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>I offer both project-based pricing and monthly retainers depending on your needs. Website projects start at $1,499 for basic sites and increase based on complexity. Digital marketing services are typically offered as monthly retainers starting at $799/month. I provide detailed quotes after understanding your specific requirements.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900">Can you help with e-commerce websites?</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>Absolutely! I create custom e-commerce solutions using platforms like Shopify, WooCommerce, and Squarespace Commerce. These include product setup, payment gateway integration, shipping configuration, and marketing strategies specific to online stores.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900">Do you offer website maintenance services?</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>Yes, I offer website maintenance packages to keep your site secure, updated, and performing optimally. These include regular updates, security monitoring, backup management, and technical support. Maintenance plans start at $99/month.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900">How do we get started working together?</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>The process begins with a free consultation where we discuss your goals and requirements. After that, I'll provide a proposal outlining the scope, timeline, and cost. Once approved, we'll kick off with a detailed discovery session to gather all the information needed to start your project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Ready to Grow Your Business Online?
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Let's discuss how I can help you achieve your business goals with a custom digital strategy.
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                            </div>
+                            <div class="ml-3 text-base text-gray-600">
+                                <p>hello@yourname.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-phone text-indigo-600"></i>
+                            </div>
+                            <div class="ml-3 text-base text-gray-600">
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fab fa-whatsapp text-indigo-600"></i>
+                            </div>
+                            <div class="ml-3 text-base text-gray-600">
+                                <p>WhatsApp: (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 lg:mt-0 lg:w-1/2">
+                    <form class="bg-white shadow-md rounded-lg p-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" name="name" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2 border">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" name="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2 border">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                                <input type="tel" name="phone" id="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2 border">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2 border"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-gradient hover:opacity-90 focus:outline-none">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold">Your Name</h3>
+                    <p class="mt-4 text-gray-300">Web Design & Digital Growth Specialist</p>
+                    <p class="mt-2 text-gray-300">Helping businesses establish a powerful online presence and drive growth.</p>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="#portfolio" class="text-gray-300 hover:text-white">Portfolio</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="#blog" class="text-gray-300 hover:text-white">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Get in Touch</h3>
+                    <div class="mt-4 space-y-2">
+                        <p class="text-gray-300"><i class="fas fa-envelope mr-2"></i> hello@yourname.com</p>
+                        <p class="text-gray-300"><i class="fas fa-phone mr-2"></i> (555) 123-4567</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#contact" class="px-4 py-2 text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                            Schedule a Free Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700">
+                <p class="text-center text-gray-400">© 2025 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
