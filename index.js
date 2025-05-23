@@ -24,3 +24,26 @@
                 }
             });
         });
+
+
+        
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwJgvOAyE1S-AqoTwt9QN1s55d0iirm4nOEk6TrxsqgPI2GvUwz-1epum4U2Iv8LaFcSw/exec'
+
+const form = document.forms['contactForm']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => response.json())
+    .then(data => {
+      console.log('Server response:', data)
+      alert("Thank you! Form is submitted");
+      window.location.reload();
+    })
+    .catch(error => {
+      console.error('Error!', error.message)
+      alert("Submission failed");
+    })
+})
